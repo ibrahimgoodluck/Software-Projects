@@ -1,0 +1,32 @@
+<?php
+$connect = mysqli_connect("local", "root", "", "phone_records");
+if(!$connect){
+	echo "error";
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		p { color:blue;
+	}</style>
+</head>
+<body class = 'background'>
+	<div>
+	<h1 align ='center' class = 'text2'>PHONES RECORD SYSTEM</h1>
+	</div>
+	<hr>
+	<form class='position'>
+		<!-- <img src="logo2.jpg" class="center"> -->
+		<br></br>
+		<label class='maji2'><strong>USERNAME:</strong></label>
+		<input type="text" name="username" required>
+		<br></br>
+		<label><strong>PASSWORD:</strong></label>
+		<input type="INT" name="PASSWORD" class="maji" required>
+		<br></br>
+		<button class = 'button'><strong>LOGIN</strong></button>
+	</form>
+</body>
+</html>

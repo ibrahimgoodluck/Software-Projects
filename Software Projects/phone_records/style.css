@@ -1,0 +1,98 @@
+.background{ 
+	/*border:5px solid green;*/
+	/*height: 50px;*/
+	/*background-image: url('phone.png');*/
+
+}
+h1{
+	color: darkblue;
+}
+.text2{
+	border-radius: 24px;
+	background: lightgreen;
+}
+.maji{
+	margin-left: 2%;
+	margin-top: 5%;
+}
+.position{
+	margin-top: 5%;
+	background-color: darkblue;
+	width: 600px;
+	height: 300px;
+	
+}
+.position{
+	margin-top: 8%;
+	margin-left: 30%;
+}
+.button{
+	margin-top: 5%;
+	margin-left: 20%;
+}
+.button2{
+	margin-top: 3%;
+	margin-left: 9%;
+	width: 40%;
+	background-color: green;
+}
+.center{
+	margin-left: 12%;
+	margin-bottom:5%;
+	float: left;
+}
+.maji2{
+	margin-left: 2%;
+}
+.center2{
+	margin-left:28%;
+	margin-bottom:5%;
+	width: 5%;
+	height: 5%;
+}
+.text{
+	margin-right: 20%;
+	text-decoration: underline;
+	float:right;
+	border-radius: 24px;
+	background: lightgreen;
+	box-shadow: 15px 15px 5px grey;
+}
+.form{
+	margin-top: 5%;
+	margin-left: 25%;
+	text-shadow: 2px 1px green;
+
+}
+.maji3{
+	margin-left:5.2%
+}
+.imgfroat{
+	margin-left: 30%;
+	margin-bottom:5%;
+	width: 100%;
+	height: 200%;
+	float:right;	
+}
+.break{
+	float: left;
+
+}
+.break2{
+	margin-left:400px;
+}
+.fit{
+	margin-left: 94px;
+}
+.fit2{
+	margin-left: 8px;
+}
+.fit3{
+	margin-left: 20px;
+}
+.head{
+	background:linear-gradient(deepskyBlue,green);
+}
+.down{
+	background:linear-gradient(deepskyBlue,green);
+}
