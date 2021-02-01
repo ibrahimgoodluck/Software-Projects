@@ -1,0 +1,253 @@
+steps for using git and github
+Install git
+
+- If you want to configure new account in git that was previously having an account 
+then you should uninstall git and install git again and configure it
+// git work offline while to access github you should have internet access
+master branch final error free code for software production
+feature branch eg development are for development and debugging
+definition
+git is software for tracking project development (locally in your machine)
+github is a cloud software for storing software project and their codes
+link: git-scm.com
+
+For ubuntu users
+sudo apt-get install git
+// to install git
+
+then configure your account
+git config --global user.name "your name"
+git config --global user.email "your email"
+
+git config --list
+// it should display your name and email check valid
+
+For tracking using git
+Navigate to your project folder 
+example cd Desktop
+cd hospital/
+
+commands
+git init	//Initilizes to be tracked by git
+//initialized empty Git repository and master branch is created
+// aware of working directory
+git status
+//show the status of your file and folder
+
+git add file name
+git add login.html
+git add . //add all files with that folder
+git add *.php // add all files with php extension
+// to track the project
+// taking file form working directory to staged/ index for tracking
+
+git status
+// changes made has to be committed (stagging file)
+
+if you added any codes to your provious file (modify/change)
+git status
+//it will display that there is some change
+// display any new file
+// file in red colour
+
+git add .
+//it will track changes made
+//display green color
+
+git status
+// view state
+
+
+repository 
+//it will assign ID for each commit
+// submitted from staged file to repository (github)
+
+git commit -m "your message"
+// commit given ID
+// commit is a display message to be displayed on a file submitted to the repository
+// Learn to write good committ from google
+
+git status
+// status of the project
+
+git log
+// list all your commits
+
+git branch
+//show all branch and your working branch 
+
+
+Branch creation
+// Branch is the repository or folder for storing codes
+// To create a new branch for development and debugging then all completed codes are should submitted to the master branch
+
+How to create a branch
+Master branch is created by default
+command
+git branch branch name
+eg  git branch hello_folks
+
+git branch
+//show all branch and your working branch 
+
+git checkout branchname
+//eg git checkout hello_folks
+//Switched to branch 'hello_folks'
+//to change working branch
+
+git branch
+//show all branch and your working branch 
+
+git status
+// 
+
+I have modified form.html and login.html so as to commit in this new branch
+then show status
+git status
+git add .
+git branch
+git status
+git log
+git commit -m "your message"
+// title and description
+git log
+
+
+Go to github account (https://github.com/)
+create new repository
+dont check readMe file
+copy this line: 
+git remote add origin git@github.com:ibrahimgoodluck/Learning-Git.git
+// To show linkage from local to cloud means where code should be sent
+
+git push
+
+//To push the current branch and set the remote as upstream, use
+git push --set-upstream origin main
+
+
+
+Merging branches
+// To merge switch to master branch 
+// branch is merged to master branch
+// you should be in a masterbranch
+// code to be merged they should be error-free
+command
+git  merge hello_folks 
+//add files and their commit message and submit
+// For same name it updates code and commit message (it replace)
+
+cloning from cloud to local and 
+pulling from local to cloud
+
+pull to get other team members changes
+push to commit codes
+To push
+git push 
+
+
+clear //to clear command
+
+
+download - normal project downloading
+clone - connection btn git (local) and remote (github)
+git clone url(from github repository)
+
+//to delete file in github clone first to your local machine then
+//commands
+git checkout master  // ensure your in the default branch (master)
+git rm -r folder-name
+// eg git rm -r system
+ls
+git status
+git commit -m "Removed duplication"
+git push
+// then insert username and password
+
+
+
+Rules for a great git commit message style
+- Separate subject (title) from body with a blank line. (<=50 char)
+- Do not end the subject line with a period.
+- Capitalize the subject line and each paragraph.
+- Use the imperative mood in the subject line.
+- Wrap lines at 72 characters.
+- Use the body (description) to explain what and why you have done something (<=72 char)
+
+The seven rules of a great Git commit message. 
+- Separate subject from body with a blank line. 
+- Limit the subject line to 50 characters. Capitalize the subject line. Do not end the subject line with a period. Use the imperative mood in the subject line. 
+- Wrap the body at 72 characters. 
+- Use the body to explain what and why you have done something
+
+committing
+git commit - "Home Page" -m "First launched page"
+//subject and body
+
+
+FOR ALL TO START PROJECT
+git clone https://github.com/Group13-2020/medical_specialist_appointment_system.git
+Cloning into 'medical_specialist_appointment_system'...
+
+
+overview
+ working 	staged 	repository
+
+To open IDE,editor
+code .
+subl .
+
+
+C:\>D:
+ D:\Software enginnering project\medical_specialist_appointment_system\Software\medical_specialist\admin
+dir mkdir cd
+git branch practises
+git checkout practises
+git branch
+git status
+git branch
+git add dashboard.php
+git status
+git commit -m "Dashboard Form" -m "This provides full control functionality for admin"
+git push
+git push --set-upstream origin practises
+Username for 'https://github.com': ibrahimgoodluck
+Password for 'https://ibrahimgoodluck@github.com':
+Finally Branch 'practises' set up to track remote branch 'practises' from 'origin'.
+
+RENAME A LOCAL AND REMOTE GIT BRANCH
+You are collaborating on a project with a group of people, and you have defined a naming convention for git branches. You created a new branch, pushed the changes to the remote repository, and realized that your branch name was incorrect.
+
+Luckily, Git allows you to rename the branch very easily using the git branch -m command.
+
+This guide explains how to rename local and remote Git branches.
+
+Renaming Git Branch #
+Follow the steps below to rename a Local and Remote Git Branch:
+
+1. Start by switching to the local branch which you want to rename:
+
+git checkout <old_name>
+2. Rename the local branch by typing:
+
+git branch -m <new_name>
+At this point, you have renamed the local branch.
+
+If you’ve already pushed the <old_name> branch to the remote repository, perform the next steps to rename the remote branch.
+
+3. Push the <new_name> local branch and reset the upstream branch:
+
+git push origin -u <new_name>
+4. Delete the <old_name> remote branch:
+
+git push origin --delete <old_name>
+That’s it. You have successfully renamed the local and remote Git branch.
+
+Conclusion
+Branches are part of the software development process and one of the most powerful features in Git. Branches are essentially pointers to a certain commit.
+
+Renaming a local Git Branch is a matter of running a single command. However you can’t directly rename a remote branch, you need to push the renamed local branch and delete the branch with the old name.
+
+
+(use "git add/rm <file>..." to update what will be committed)
+(use "git restore <file>..." to discard changes in working directory)
